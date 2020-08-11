@@ -3,8 +3,8 @@ import React from "react";
 const TranslationList = (props) => {
   return (
     <div>
-      {props.translationList.map((element) => (
-        <h1>{element}</h1>
+      {props.translationList.map((element, index) => (
+        <h1 key={index}>{element}</h1>
       ))}
     </div>
   );
