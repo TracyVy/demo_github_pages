@@ -3,6 +3,7 @@ import React from "react";
 const TranslationInput = (props) => {
   return (
     <form onSubmit={props.submitText}>
+      <h1>Yoda Translator</h1>
       <div className="input-group mb-3">
         <input
           name="text"
