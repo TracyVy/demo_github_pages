@@ -3,7 +3,6 @@ import React from "react";
 const TranslationInput = (props) => {
   return (
     <form onSubmit={props.submitText}>
-      <h1>Welcome to Yoda Translator</h1>
       <div className="input-group mb-3">
         <input
           name="text"
@@ -14,8 +13,8 @@ const TranslationInput = (props) => {
         />
         <div className="input-group-append">
           <button
-            type="submit"
             className="btn btn-outline-secondary"
+            type="submit"
             id="button-addon2"
           >
             Submit

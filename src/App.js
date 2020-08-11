@@ -16,7 +16,6 @@ function App() {
 
   const submitText = (e) => {
     e.preventDefault();
-
     translate(translation.text).then((res) => {
       setTranslation({
         ...translation,
@@ -34,7 +33,7 @@ function App() {
           "content-type": "application/x-www-form-urlencoded",
           "x-rapidapi-host": "yodish.p.rapidapi.com",
           "x-rapidapi-key":
-            "b54663a5e6msh64cb43d3524bb21p186d22jsnb6eb1989079a",
+            "b7436eb940msh7eda97d567495aap1562ccjsndf86c1bddee6",
           useQueryString: true,
         },
         params: {
@@ -66,8 +65,8 @@ function App() {
           <TranslationInput submitText={submitText} editText={editText} />
         </div>
       </div>
-      ​
-      <TranslationList traslationList={translation.translationList} />
+
+      <TranslationList translationList={translation.translationList} />
     </div>
   );
 }
